@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EF_MVC</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Staffy</title>
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="~/css/simple-sidebar.css" />
+    <link href="~/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/open-iconic/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!--
+                <link href="~/assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+        -->
+
+</head>
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-dark bg-Staffy flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-2 col-lg-1 mr-0 px-3" href="#"><img src="/images/4165102.png" style="height: 47px;"> Staffy</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    Mon Compte
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Présence</span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Feuille de Présence
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Mes Absences
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Mes congés
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Demandes à valider
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Mon équipe
+                            </a>
+                        </li>
+                    </ul>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>GRH</span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Collaborateurs" asp-action="Index">
+                                <span class="oi oi-people" aria-hidden="true"></span>
+                                Gestion des Collaborateurs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Poles" asp-action="Index">
+                                <span class="oi oi-bar-chart" aria-hidden="true"></span>
+                                Gestion des Département
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Entites" asp-action="Index">
+                                <span class="oi oi-bar-chart" aria-hidden="true"></span>
+                                Gestion des Entitès
+                            </a>
+                        </li>
+                    </ul>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>School</span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                <span class="oi oi-person" title="person" aria-hidden="true"></span>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            <a class="nav-link" asp-area="" asp-controller="Students" asp-action="Index">Students</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Enrollments" asp-action="Index">Enrollments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Courses" asp-action="Index">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Instructors" asp-action="Index">Instructors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Departments" asp-action="Index">Departments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-md-4 staffy">
+                @RenderBody()
+            </main>
+        </div>
+        <div class="row">
+            <footer class="border-top footer text-muted">
+                <div class="container">
+                    &copy; 2020 - EF_MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery CDN -->
+    <!-- Bootstrap Js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="~/vendor/jquery/jquery.slim.min.js"></script>
+
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/site.js"></script>
+
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
